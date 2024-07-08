@@ -8,7 +8,6 @@ import argparse
 
 from model import ConvModule, yolov8n_pvdet
 
-
 def export(weight: str, device, input_shape, input_names, output_names, opset_version, enable_onnxsim):
     model = yolov8n_pvdet()
 

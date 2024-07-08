@@ -235,13 +235,11 @@ class DecoupledHead(nn.Module):
         super().__init__()
         xw = in_channels
         self.bbox_branch = nn.Sequential(
-            ConvModule(xw, xw, k=3, s=1, p=1, act=act),
-            ConvModule(xw, xw, k=3, s=1, p=1, act=act),
+            # ConvModule(xw, xw, k=3, s=1, p=1, act=act),
             nn.Conv2d(xw, 4, kernel_size=1, stride=1),
         )
         self.cls_branch = nn.Sequential(
-            ConvModule(xw, xw, k=3, s=1, p=1, act=act),
-            ConvModule(xw, xw, k=3, s=1, p=1, act=act),
+            # ConvModule(xw, xw, k=3, s=1, p=1, act=act),
             nn.Conv2d(xw, nc, kernel_size=1, stride=1),
         )
         self.stride = stride

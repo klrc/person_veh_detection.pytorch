@@ -5,6 +5,8 @@ from tqdm import tqdm
 from loguru import logger
 import numpy as np
 import argparse
+import torch.nn as nn
+import torch_pruning as tp
 
 from model import yolov8n_pvdet
 from dataloader import InfiniteDataLoader
@@ -14,6 +16,13 @@ from model_loss import create_optimizer, create_scheduler, EarlyStop, YOLOv8Loss
 from ema import ModelEMA
 from box import box_iou, scale_coords, xywh2xyxy
 from copy import deepcopy
+
+
+class MySlimmingPruner(tp.pruner.MetaPruner):
+    def regularize(self, model, reg):
+        for m in model.modules():
+            if isinstance(m, (nn.BatchNorm1d, nn.BatchNorm2d, nn.BatchNorm3d)) and m.affine==True:
+                m.weight.grad.data.add_(reg*torch.sign(m.weight.data)) # Lasso for sparsity
 
 
 def compute_ap(recall, precision):
@@ -288,6 +297,29 @@ def train(
         num_workers=num_workers,
     )
 
+    # 0. importance criterion 
+    imp = tp.importance.MagnitudeImportance(p=2)  # L2 范数
+
+    # 1. ignore some layers that should not be pruned, e.g., the final classifier layer.
+    ignored_layers = []
+    for m in model.modules():
+        if isinstance(m, nn.Conv2d) and m.bias is not None:
+            print(f"m={m}")
+            ignored_layers.append(m) # DO NOT prune the final classifier!
+
+    # 2. Pruner initialization
+    example_inputs = torch.randn(1, 3, 352, 640)
+    iterative_steps = max_epochs # You can prune your model to the target pruning ratio iteratively.
+    pruner = MySlimmingPruner(
+        model, 
+        example_inputs, 
+        global_pruning=False, # If False, a uniform pruning ratio will be assigned to different layers.
+        importance=imp, # importance criterion for parameter selection
+        iterative_steps=iterative_steps, # the number of iterations to achieve target pruning ratio
+        pruning_ratio=0.5, # remove 50% channels, ResNet18 = {64, 128, 256, 512} => ResNet18_Half = {32, 64, 128, 256}
+        ignored_layers=ignored_layers,
+    )
+
     # rescale hyps
     best_fitness = 0.0
     nb = len(train_loader)
@@ -328,7 +360,21 @@ def train(
         logger.success("Wandb logger created")
 
     # start training loop
+    base_macs, base_nparams = tp.utils.count_ops_and_params(model, example_inputs)
     for epoch in range(max_epochs):
+    
+        pruner.step()
+        macs, nparams = tp.utils.count_ops_and_params(model, example_inputs)
+        print(
+            "  Iter %d/%d, Params: %.2f M => %.2f M"
+            % (i+1, iterative_steps, base_nparams / 1e6, nparams / 1e6)
+        )
+        print(
+            "  Iter %d/%d, MACs: %.2f G => %.2f G"
+            % (i+1, iterative_steps, base_macs / 1e9, macs / 1e9)
+        )
+        print("="*16)
+
         mloss = torch.zeros(len(loss_titles), device=device)  # mean losses
 
         # Set progress bar
@@ -421,6 +467,7 @@ def train(
             else:
                 torch.save(deepcopy(model).state_dict(), f"{save_dir}/{model_name}.pt")
         torch.save(deepcopy(model).state_dict(), f"{save_dir}/{model_name}_latest.pt")
+        torch.save(model, f"{save_dir}/{model_name}.pth")
 
         # check early stop
         if early_stop and early_stopper(epoch=epoch, fitness=fi):
