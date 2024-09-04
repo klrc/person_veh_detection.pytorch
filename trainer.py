@@ -17,14 +17,6 @@ from ema import ModelEMA
 from box import box_iou, scale_coords, xywh2xyxy
 from copy import deepcopy
 
-
-class MySlimmingPruner(tp.pruner.MetaPruner):
-    def regularize(self, model, reg):
-        for m in model.modules():
-            if isinstance(m, (nn.BatchNorm1d, nn.BatchNorm2d, nn.BatchNorm3d)) and m.affine==True:
-                m.weight.grad.data.add_(reg*torch.sign(m.weight.data)) # Lasso for sparsity
-
-
 def compute_ap(recall, precision):
     """Compute the average precision, given the recall and precision curves
     # Arguments
@@ -297,29 +289,6 @@ def train(
         num_workers=num_workers,
     )
 
-    # 0. importance criterion 
-    imp = tp.importance.MagnitudeImportance(p=2)  # L2 范数
-
-    # 1. ignore some layers that should not be pruned, e.g., the final classifier layer.
-    ignored_layers = []
-    for m in model.modules():
-        if isinstance(m, nn.Conv2d) and m.bias is not None:
-            print(f"m={m}")
-            ignored_layers.append(m) # DO NOT prune the final classifier!
-
-    # 2. Pruner initialization
-    example_inputs = torch.randn(1, 3, 352, 640)
-    iterative_steps = max_epochs # You can prune your model to the target pruning ratio iteratively.
-    pruner = MySlimmingPruner(
-        model, 
-        example_inputs, 
-        global_pruning=False, # If False, a uniform pruning ratio will be assigned to different layers.
-        importance=imp, # importance criterion for parameter selection
-        iterative_steps=iterative_steps, # the number of iterations to achieve target pruning ratio
-        pruning_ratio=0.5, # remove 50% channels, ResNet18 = {64, 128, 256, 512} => ResNet18_Half = {32, 64, 128, 256}
-        ignored_layers=ignored_layers,
-    )
-
     # rescale hyps
     best_fitness = 0.0
     nb = len(train_loader)
@@ -360,21 +329,7 @@ def train(
         logger.success("Wandb logger created")
 
     # start training loop
-    base_macs, base_nparams = tp.utils.count_ops_and_params(model, example_inputs)
     for epoch in range(max_epochs):
-    
-        pruner.step()
-        macs, nparams = tp.utils.count_ops_and_params(model, example_inputs)
-        print(
-            "  Iter %d/%d, Params: %.2f M => %.2f M"
-            % (i+1, iterative_steps, base_nparams / 1e6, nparams / 1e6)
-        )
-        print(
-            "  Iter %d/%d, MACs: %.2f G => %.2f G"
-            % (i+1, iterative_steps, base_macs / 1e9, macs / 1e9)
-        )
-        print("="*16)
-
         mloss = torch.zeros(len(loss_titles), device=device)  # mean losses
 
         # Set progress bar
@@ -467,7 +422,6 @@ def train(
             else:
                 torch.save(deepcopy(model).state_dict(), f"{save_dir}/{model_name}.pt")
         torch.save(deepcopy(model).state_dict(), f"{save_dir}/{model_name}_latest.pt")
-        torch.save(model, f"{save_dir}/{model_name}.pth")
 
         # check early stop
         if early_stop and early_stopper(epoch=epoch, fitness=fi):
@@ -491,15 +445,15 @@ if __name__ == "__main__":
     parser.add_argument("--max_epochs", type=int, default=100, help="最大训练epoch数")
     parser.add_argument("--loss_titles", nargs="+", default=["box", "cls", "dfl"], help="默认yolov8损失函数项")
     parser.add_argument("--device_id", type=str, default="mps", help="设备类型: cuda, mps, cpu, 0, 1, ...(显卡device id)")
-    parser.add_argument("--trainset_path", type=str, default="/Volumes/ASM236X/datasets/RelativeHuman/images/train", help="训练集images文件夹位置, 会根据images->labels规则寻找标签文件夹")
-    parser.add_argument("--valset_path", type=str, default="/Volumes/ASM236X/datasets/RelativeHuman/images/val", help="测试集文件夹位置")
-    parser.add_argument("--batch_size", type=int, default=3, help="批处理大小")
+    parser.add_argument("--trainset_path", type=str, default="/home/han.sun/datasets/fh_pedestrian/images/train", help="训练集images文件夹位置, 会根据images->labels规则寻找标签文件夹")
+    parser.add_argument("--valset_path", type=str, default="/home/han.sun/datasets/fh_pedestrian/images/val", help="测试集文件夹位置")
+    parser.add_argument("--batch_size", type=int, default=16, help="批处理大小")
     parser.add_argument("--image_size", type=int, default=640, help="图像尺寸")
     parser.add_argument("--strides", nargs="+", default=[8, 16, 32], help="输入尺寸对齐(=最大原图输出网格缩放倍数)")
     parser.add_argument("--class_names", nargs="+", default=FhPedestrianDataset.class_names, help="类别名称")
     parser.add_argument("--model_name", type=str, default=generate_hash(), help="模型名称, 默认生成随机hash")
     parser.add_argument("--save_dir", type=str, default="./runs", help="日志&权重存储路径")
-    parser.add_argument("--pretrained_pt_path", type=str, default=None, help="预训练模型路径")
+    parser.add_argument("--pretrained_pt_path", type=str, default="res/pvdetection_07fe2b.pt", help="预训练模型路径")
     parser.add_argument("--autocast_enabled", action="store_true", help="是否启用autocast, 目前有已知的精度issue")
     parser.add_argument("--optimizer_type", type=str, default="SGD", help="优化器选项, 可选: Adam, AdamW, RMSProp, SGD")
     parser.add_argument("--lr0", type=float, default=0.01, help="初始学习率")
