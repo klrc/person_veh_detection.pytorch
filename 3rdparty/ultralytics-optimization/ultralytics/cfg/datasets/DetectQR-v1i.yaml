@@ -1,0 +1,13 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: /nfs/datasets/DetectQR-v1i # dataset root dir
+train: train/images # train images (relative to 'path') 3471 images
+val: valid/images # val images (relative to 'path') 157 images
+test: test/images # test images (optional) 156 images
+
+# Classes for DetectQR-v1i
+names:
+  0: QRCode
+
+# downloaded from: https://universe.roboflow.com/detect-qr/detect-qr
