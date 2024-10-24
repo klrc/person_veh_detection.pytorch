@@ -1,0 +1,744 @@
+model is loaded beforehand. No setup needed
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks skipped ⚠️. Unable to load YOLOv8n due to possible Ultralytics package modifications. Setting 'amp=True'. If you experience zero-mAP or NaN losses you can disable AMP with amp=False.
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/062776.jpg: 2 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/081234.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/081266.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/081978.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/082095.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/082125.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/082402.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/082460.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/082654.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/082907.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/083413.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/083535.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/083716.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/083722.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/083870.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/083871.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/084065.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/084364.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/084417.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/084505.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/084515.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/084584.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/084664.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/084766.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/084823.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/084891.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/085043.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/085336.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/085687.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/085760.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/085915.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/085945.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/086371.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/086435.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/086546.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/086608.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/086650.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/086719.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/086746.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/086881.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/086921.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/087205.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/087416.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/087556.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/087803.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/093024.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/093392.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/094305.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/094422.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/094625.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/094686.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/094867.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/094922.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/095621.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/095629.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/095632.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/095673.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/095949.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/096167.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/096255.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/096446.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/096451.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/096858.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/097784.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/098551.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/098763.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/100287.jpg: 2 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/100460.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/100478.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/100684.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/100919.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/101059.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/101154.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/101453.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/101743.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/102042.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/102223.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/102369.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/102500.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/102552.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/102663.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/103187.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/103266.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/103599.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/103606.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/103669.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/103700.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/103884.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/103890.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/104014.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/104146.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/104196.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/104583.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/104773.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/105304.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/105428.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/105533.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/105691.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/106148.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/106535.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/train/106944.jpg: 1 duplicate labels removed
+[34m[1malbumentations: [39m[22mBlur(p=0.01, blur_limit=(3, 7)), MedianBlur(p=0.01, blur_limit=(3, 7)), ToGray(p=0.01), CLAHE(p=0.01, clip_limit=(1, 4.0), tile_grid_size=(8, 8))
+[34m[1mval: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/val/081737.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/val/081786.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/val/084285.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/val/084640.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/val/085511.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/val/086966.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/val/087057.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/val/087575.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/val/096287.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/val/100815.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/val/101399.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/val/102248.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/val/105697.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/val/106479.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING ⚠️ /home/han.sun/datasets/fullhan-pedveh/images/val/106880.jpg: 1 duplicate labels removed
+Plotting labels to runs/detect/train/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m SGD(lr=0.01, momentum=0.9) with parameter groups 89 weight(decay=0.0), 101 weight(decay=0.0005), 101 bias(decay=0.0)
+[34m[1mTensorBoard: [39m[22mmodel graph visualization added ✅
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mruns/detect/train
+Starting training for 100 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.503      0.374      0.388      0.205
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.669      0.483      0.549       0.32
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.719      0.524      0.607      0.371
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.753      0.559       0.65      0.409
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.772      0.578      0.673      0.432
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.782      0.586      0.685      0.446
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.789      0.594      0.695      0.454
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.796        0.6      0.701      0.461
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.797      0.604      0.705      0.465
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.801      0.605      0.708      0.469
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.803      0.606       0.71      0.471
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.801      0.607      0.711      0.473
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.799      0.606       0.71      0.472
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.797      0.605      0.709      0.473
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.793      0.607      0.708      0.473
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.789      0.611      0.708      0.474
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824       0.79      0.613       0.71      0.476
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.792      0.614      0.711      0.478
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.792      0.616      0.714       0.48
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.797      0.617      0.717      0.483
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.802      0.618       0.72      0.486
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.807      0.619      0.723      0.489
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.806      0.623      0.725      0.491
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.811      0.623      0.726      0.492
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.814      0.623      0.728      0.495
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.817      0.624      0.731      0.497
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.816      0.628      0.732      0.498
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.818      0.627      0.733        0.5
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.817      0.629      0.734      0.502
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.818       0.63      0.735      0.503
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.817      0.631      0.736      0.504
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.818      0.632      0.738      0.506
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.819      0.633      0.739      0.507
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824       0.82      0.634       0.74      0.509
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.821      0.635      0.742       0.51
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.822      0.636      0.743      0.511
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.821      0.638      0.744      0.512
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.823      0.639      0.746      0.513
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.822      0.641      0.747      0.514
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.825      0.641      0.748      0.515
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.829      0.642      0.749      0.517
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.827      0.644       0.75      0.518
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.826      0.648      0.752      0.519
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.829      0.647      0.753       0.52
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.831      0.648      0.754      0.521
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.831      0.649      0.755      0.522
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.833      0.649      0.756      0.523
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.839      0.648      0.757      0.524
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.839      0.648      0.757      0.524
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.837      0.651      0.758      0.525
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.834      0.653      0.759      0.526
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.837      0.653       0.76      0.526
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.836      0.654       0.76      0.527
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.837      0.653      0.761      0.527
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.837      0.654      0.761      0.527
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.835      0.656      0.761      0.528
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.835      0.657      0.762      0.529
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.836      0.657      0.763       0.53
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.834      0.658      0.763      0.531
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.833      0.658      0.762      0.531
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824       0.83      0.658      0.761       0.53
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.832      0.658      0.761       0.53
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.833       0.66      0.762      0.531
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.838       0.66      0.766      0.533
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824       0.84      0.661      0.767      0.534
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.843       0.66      0.768      0.535
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824       0.84      0.663      0.769      0.536
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.841      0.663      0.769      0.536
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.837      0.665      0.769      0.536
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.837      0.666      0.769      0.537
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.838      0.666       0.77      0.538
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.839      0.666      0.771      0.539
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.841      0.667      0.772      0.539
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.842      0.667      0.773       0.54
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.843      0.668      0.774      0.541
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.843      0.669      0.774      0.541
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.843       0.67      0.775      0.542
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.845      0.669      0.775      0.543
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.842      0.673      0.776      0.544
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.844      0.672      0.777      0.544
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.842      0.674      0.777      0.545
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.845      0.673      0.778      0.545
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.846      0.674      0.779      0.546
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.845      0.675      0.779      0.546
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.846      0.675      0.779      0.547
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.847      0.676       0.78      0.547
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.848      0.676       0.78      0.548
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.851      0.675      0.781      0.549
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.849      0.675      0.781      0.549
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824       0.85      0.673       0.78      0.549
+Closing dataloader mosaic
+[34m[1malbumentations: [39m[22mBlur(p=0.01, blur_limit=(3, 7)), MedianBlur(p=0.01, blur_limit=(3, 7)), ToGray(p=0.01), CLAHE(p=0.01, clip_limit=(1, 4.0), tile_grid_size=(8, 8))
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.849      0.674      0.779      0.549
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824       0.85      0.673      0.779      0.549
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.849      0.675       0.78       0.55
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.852      0.674      0.781      0.552
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.851      0.676      0.782      0.552
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824       0.85      0.676      0.783      0.553
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.851      0.676      0.783      0.554
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.852      0.677      0.784      0.555
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.854      0.677      0.785      0.555
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all      10700      57824      0.856      0.677      0.785      0.556
+100 epochs completed in 19.432 hours.
+Optimizer stripped from runs/detect/train/weights/last.pt, 3.6MB
+Optimizer stripped from runs/detect/train/weights/best.pt, 3.6MB
+Validating runs/detect/train/weights/best.pt...
+Ultralytics YOLOv8.2.87 🚀 Python-3.9.7 torch-1.10.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+YOLOv10n summary (fused): 272 layers, 1,653,468 parameters, 0 gradients, 4.0 GFLOPs
+                   all      10700      57824      0.856      0.677      0.785      0.556
+                person       8586      31723       0.84      0.638      0.751      0.507
+               vehicle       4587      26101      0.872      0.715       0.82      0.605
+Speed: 0.1ms preprocess, 0.6ms inference, 0.0ms loss, 0.1ms postprocess per image
+Results saved to [1mruns/detect/train
+[34m[1mtrain: [39m[22mScanning /home/han.sun/datasets/fullhan-pedveh/labels/train.cache... 96300 images, 2 backgrounds, 0 corrupt: 100%|██████████| 96300/96300 [00:00<?, ?it/s]
+[34m[1mval: [39m[22mScanning /home/han.sun/datasets/fullhan-pedveh/labels/val.cache... 10700 images, 0 backgrounds, 0 corrupt: 100%|██████████| 10700/10700 [00:00<?, ?it/s]
+      1/100       4.1G      5.944      6.374          0        123        640: 100%|██████████| 6019/6019 [12:53<00:00,  7.78it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:39<00:00,  8.58it/s]
+      2/100      4.16G      3.752      3.549          0        128        640: 100%|██████████| 6019/6019 [11:46<00:00,  8.51it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.53it/s]
+      3/100      3.76G      3.486      3.186          0         86        640: 100%|██████████| 6019/6019 [11:35<00:00,  8.65it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:33<00:00,  9.90it/s]
+      4/100      3.65G      3.314      2.955          0        113        640: 100%|██████████| 6019/6019 [10:59<00:00,  9.12it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.85it/s]
+      5/100      3.49G      3.169      2.753          0         83        640: 100%|██████████| 6019/6019 [11:15<00:00,  8.91it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:33<00:00,  9.85it/s]
+      6/100      4.32G      3.088      2.644          0        108        640: 100%|██████████| 6019/6019 [11:03<00:00,  9.07it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.53it/s]
+      7/100      3.85G      3.033      2.572          0        115        640: 100%|██████████| 6019/6019 [10:58<00:00,  9.14it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.82it/s]
+      8/100      4.33G      2.988      2.512          0         81        640: 100%|██████████| 6019/6019 [11:02<00:00,  9.08it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.65it/s]
+      9/100      4.31G      2.957      2.469          0         94        640: 100%|██████████| 6019/6019 [11:20<00:00,  8.84it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.83it/s]
+     10/100      3.53G      2.932      2.443          0        126        640: 100%|██████████| 6019/6019 [11:11<00:00,  8.96it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:33<00:00,  9.87it/s]
+     11/100      3.45G      2.915      2.412          0        194        640: 100%|██████████| 6019/6019 [11:07<00:00,  9.01it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.71it/s]
+     12/100      3.61G      2.899      2.396          0         96        640: 100%|██████████| 6019/6019 [10:58<00:00,  9.14it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:33<00:00,  9.91it/s]
+     13/100      3.33G      2.876      2.371          0        155        640: 100%|██████████| 6019/6019 [10:57<00:00,  9.15it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:33<00:00,  9.92it/s]
+     14/100      3.43G      2.866      2.357          0        102        640: 100%|██████████| 6019/6019 [10:59<00:00,  9.12it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:33<00:00,  9.94it/s]
+     15/100      3.31G      2.857      2.338          0         88        640: 100%|██████████| 6019/6019 [10:56<00:00,  9.17it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.63it/s]
+     16/100      3.71G      2.842      2.328          0        142        640: 100%|██████████| 6019/6019 [11:03<00:00,  9.07it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.78it/s]
+     17/100      3.77G      2.835      2.319          0         84        640: 100%|██████████| 6019/6019 [10:56<00:00,  9.16it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.76it/s]
+     18/100      3.86G      2.826      2.301          0        114        640: 100%|██████████| 6019/6019 [11:00<00:00,  9.11it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.63it/s]
+     19/100       3.6G      2.812      2.291          0        156        640: 100%|██████████| 6019/6019 [11:00<00:00,  9.12it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.71it/s]
+     20/100      3.59G      2.806      2.284          0        151        640: 100%|██████████| 6019/6019 [10:58<00:00,  9.15it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.57it/s]
+     21/100      3.99G      2.796      2.276          0        140        640: 100%|██████████| 6019/6019 [10:59<00:00,  9.12it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.54it/s]
+     22/100      3.98G       2.79      2.271          0        138        640: 100%|██████████| 6019/6019 [10:56<00:00,  9.16it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.70it/s]
+     23/100      3.96G      2.783      2.267          0        163        640: 100%|██████████| 6019/6019 [10:56<00:00,  9.16it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.73it/s]
+     24/100      3.79G      2.776       2.26          0        133        640: 100%|██████████| 6019/6019 [10:54<00:00,  9.20it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.41it/s]
+     25/100      4.44G      2.772      2.247          0        157        640: 100%|██████████| 6019/6019 [10:58<00:00,  9.14it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:33<00:00,  9.90it/s]
+     26/100      2.98G      2.767      2.246          0         90        640: 100%|██████████| 6019/6019 [11:01<00:00,  9.10it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.63it/s]
+     27/100      3.76G      2.758      2.234          0        163        640: 100%|██████████| 6019/6019 [10:59<00:00,  9.13it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.72it/s]
+     28/100      4.67G      2.749      2.228          0         92        640: 100%|██████████| 6019/6019 [10:59<00:00,  9.12it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.57it/s]
+     29/100      4.08G      2.748      2.227          0        115        640: 100%|██████████| 6019/6019 [10:56<00:00,  9.17it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.76it/s]
+     30/100         5G      2.743      2.222          0        102        640: 100%|██████████| 6019/6019 [11:02<00:00,  9.08it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:33<00:00,  9.88it/s]
+     31/100      4.12G      2.738      2.212          0         97        640: 100%|██████████| 6019/6019 [10:56<00:00,  9.17it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.64it/s]
+     32/100      3.75G       2.73      2.207          0        137        640: 100%|██████████| 6019/6019 [10:59<00:00,  9.13it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.66it/s]
+     33/100       4.2G      2.725        2.2          0         69        640: 100%|██████████| 6019/6019 [11:00<00:00,  9.11it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.51it/s]
+     34/100      3.58G      2.721      2.196          0        105        640: 100%|██████████| 6019/6019 [10:59<00:00,  9.12it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.72it/s]
+     35/100      4.03G      2.718      2.193          0        101        640: 100%|██████████| 6019/6019 [11:06<00:00,  9.03it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.68it/s]
+     36/100      4.37G      2.709      2.186          0        181        640: 100%|██████████| 6019/6019 [11:02<00:00,  9.08it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.52it/s]
+     37/100      4.51G      2.705      2.179          0        128        640: 100%|██████████| 6019/6019 [11:05<00:00,  9.04it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.44it/s]
+     38/100      4.12G      2.698      2.181          0        102        640: 100%|██████████| 6019/6019 [11:04<00:00,  9.05it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.60it/s]
+     39/100      4.36G      2.694      2.172          0         82        640: 100%|██████████| 6019/6019 [11:04<00:00,  9.05it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.64it/s]
+     40/100      3.45G      2.694      2.165          0         97        640: 100%|██████████| 6019/6019 [11:01<00:00,  9.10it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.52it/s]
+     41/100      4.04G      2.687      2.161          0        151        640: 100%|██████████| 6019/6019 [11:06<00:00,  9.03it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.72it/s]
+     42/100      4.51G       2.69      2.165          0        122        640: 100%|██████████| 6019/6019 [11:04<00:00,  9.06it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.71it/s]
+     43/100      3.76G       2.68      2.158          0         93        640: 100%|██████████| 6019/6019 [11:07<00:00,  9.02it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.78it/s]
+     44/100      4.19G       2.68       2.15          0        111        640: 100%|██████████| 6019/6019 [11:10<00:00,  8.98it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.61it/s]
+     45/100      3.76G      2.677       2.15          0        132        640: 100%|██████████| 6019/6019 [11:03<00:00,  9.07it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.52it/s]
+     46/100      4.98G      2.663      2.139          0        166        640: 100%|██████████| 6019/6019 [11:05<00:00,  9.04it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.85it/s]
+     47/100      3.85G      2.666      2.139          0        142        640: 100%|██████████| 6019/6019 [11:09<00:00,  8.99it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.53it/s]
+     48/100      3.77G      2.656       2.13          0        117        640: 100%|██████████| 6019/6019 [11:02<00:00,  9.09it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.62it/s]
+     49/100      3.65G      2.654      2.131          0        108        640: 100%|██████████| 6019/6019 [11:05<00:00,  9.04it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.66it/s]
+     50/100      4.31G      2.649      2.115          0         79        640: 100%|██████████| 6019/6019 [11:03<00:00,  9.07it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.61it/s]
+     51/100      3.96G      2.649       2.12          0         97        640: 100%|██████████| 6019/6019 [11:05<00:00,  9.05it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.68it/s]
+     52/100      3.57G      2.649      2.116          0        110        640: 100%|██████████| 6019/6019 [11:03<00:00,  9.07it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.76it/s]
+     53/100      3.75G      2.638      2.109          0         85        640: 100%|██████████| 6019/6019 [11:00<00:00,  9.11it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.38it/s]
+     54/100      3.74G      2.632      2.101          0         94        640: 100%|██████████| 6019/6019 [11:06<00:00,  9.03it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.64it/s]
+     55/100      4.23G      2.631      2.099          0        160        640: 100%|██████████| 6019/6019 [11:05<00:00,  9.04it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.72it/s]
+     56/100      3.66G      2.628      2.096          0        125        640: 100%|██████████| 6019/6019 [11:09<00:00,  8.99it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.63it/s]
+     57/100      3.86G      2.618      2.084          0        118        640: 100%|██████████| 6019/6019 [11:07<00:00,  9.02it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.78it/s]
+     58/100      3.52G      2.616      2.087          0        125        640: 100%|██████████| 6019/6019 [11:03<00:00,  9.07it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.66it/s]
+     59/100       4.1G      2.608      2.085          0         90        640: 100%|██████████| 6019/6019 [11:03<00:00,  9.07it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.77it/s]
+     60/100      3.38G      2.609      2.078          0        137        640: 100%|██████████| 6019/6019 [11:09<00:00,  8.99it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.59it/s]
+     61/100      4.13G      2.603      2.069          0        142        640: 100%|██████████| 6019/6019 [11:03<00:00,  9.07it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.54it/s]
+     62/100      3.73G      2.599      2.067          0         71        640: 100%|██████████| 6019/6019 [10:58<00:00,  9.14it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.79it/s]
+     63/100      3.49G      2.598      2.057          0        133        640: 100%|██████████| 6019/6019 [11:01<00:00,  9.10it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.66it/s]
+     64/100      4.39G      2.589      2.051          0         80        640: 100%|██████████| 6019/6019 [11:03<00:00,  9.07it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.73it/s]
+     65/100       4.1G      2.587      2.057          0        133        640: 100%|██████████| 6019/6019 [11:01<00:00,  9.09it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.78it/s]
+     66/100      3.87G      2.581      2.051          0        103        640: 100%|██████████| 6019/6019 [11:04<00:00,  9.05it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.83it/s]
+     67/100      4.48G      2.575      2.037          0        233        640: 100%|██████████| 6019/6019 [11:06<00:00,  9.03it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.78it/s]
+     68/100      3.41G      2.576       2.04          0         89        640: 100%|██████████| 6019/6019 [11:05<00:00,  9.04it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.78it/s]
+     69/100      3.69G       2.57      2.032          0        131        640: 100%|██████████| 6019/6019 [11:04<00:00,  9.05it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.67it/s]
+     70/100      4.11G       2.56      2.023          0        110        640: 100%|██████████| 6019/6019 [10:59<00:00,  9.13it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:33<00:00,  9.94it/s]
+     71/100      4.01G      2.561      2.025          0        126        640: 100%|██████████| 6019/6019 [11:02<00:00,  9.08it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.66it/s]
+     72/100      4.32G      2.556      2.014          0        124        640: 100%|██████████| 6019/6019 [11:05<00:00,  9.04it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.71it/s]
+     73/100      5.23G      2.549      2.006          0        111        640: 100%|██████████| 6019/6019 [11:17<00:00,  8.89it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.51it/s]
+     74/100      3.71G      2.548      2.004          0        172        640: 100%|██████████| 6019/6019 [11:03<00:00,  9.07it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.55it/s]
+     75/100      4.35G      2.536      1.995          0        124        640: 100%|██████████| 6019/6019 [11:04<00:00,  9.05it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.77it/s]
+     76/100      3.84G      2.542      1.999          0        105        640: 100%|██████████| 6019/6019 [10:59<00:00,  9.13it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.46it/s]
+     77/100      3.93G      2.532      1.985          0         74        640: 100%|██████████| 6019/6019 [10:57<00:00,  9.15it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.54it/s]
+     78/100      3.64G      2.525       1.98          0         77        640: 100%|██████████| 6019/6019 [10:54<00:00,  9.20it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.78it/s]
+     79/100      3.49G      2.519      1.973          0        127        640: 100%|██████████| 6019/6019 [10:55<00:00,  9.18it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.58it/s]
+     80/100      4.24G       2.51      1.966          0        151        640: 100%|██████████| 6019/6019 [10:53<00:00,  9.22it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.72it/s]
+     81/100      3.72G      2.506      1.965          0         76        640: 100%|██████████| 6019/6019 [11:00<00:00,  9.11it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.82it/s]
+     82/100      3.96G      2.502      1.957          0        102        640: 100%|██████████| 6019/6019 [10:57<00:00,  9.16it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.80it/s]
+     83/100      3.38G      2.495      1.948          0        123        640: 100%|██████████| 6019/6019 [10:59<00:00,  9.12it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.53it/s]
+     84/100      4.13G      2.491      1.937          0        103        640: 100%|██████████| 6019/6019 [10:57<00:00,  9.16it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.43it/s]
+     85/100      3.43G      2.486       1.93          0         97        640: 100%|██████████| 6019/6019 [11:05<00:00,  9.04it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.81it/s]
+     86/100      4.39G      2.483       1.93          0        186        640: 100%|██████████| 6019/6019 [11:00<00:00,  9.11it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.81it/s]
+     87/100      3.98G      2.471      1.919          0        140        640: 100%|██████████| 6019/6019 [11:02<00:00,  9.09it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.38it/s]
+     88/100      3.35G      2.467      1.909          0        142        640: 100%|██████████| 6019/6019 [11:08<00:00,  9.00it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:35<00:00,  9.52it/s]
+     89/100      3.58G      2.461      1.906          0        116        640: 100%|██████████| 6019/6019 [11:15<00:00,  8.91it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:38<00:00,  8.63it/s]
+     90/100      3.79G      2.454      1.898          0        110        640: 100%|██████████| 6019/6019 [11:05<00:00,  9.05it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.65it/s]
+     91/100      3.87G        2.4      1.786          0         56        640: 100%|██████████| 6019/6019 [10:48<00:00,  9.28it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:33<00:00,  9.93it/s]
+     92/100      4.06G      2.384      1.767          0         42        640: 100%|██████████| 6019/6019 [10:40<00:00,  9.40it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.67it/s]
+     93/100       4.1G      2.365      1.748          0         46        640: 100%|██████████| 6019/6019 [10:42<00:00,  9.36it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.75it/s]
+     94/100      3.71G      2.359      1.738          0         58        640: 100%|██████████| 6019/6019 [10:45<00:00,  9.33it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.58it/s]
+     95/100      3.88G      2.345      1.721          0         47        640: 100%|██████████| 6019/6019 [10:52<00:00,  9.22it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.84it/s]
+     96/100      3.44G      2.335      1.711          0         84        640: 100%|██████████| 6019/6019 [10:44<00:00,  9.34it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.74it/s]
+     97/100      3.58G      2.324      1.698          0         50        640: 100%|██████████| 6019/6019 [10:47<00:00,  9.29it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.78it/s]
+     98/100      4.19G      2.315      1.683          0         30        640: 100%|██████████| 6019/6019 [10:48<00:00,  9.28it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.74it/s]
+     99/100      3.97G      2.307      1.674          0         83        640: 100%|██████████| 6019/6019 [10:42<00:00,  9.37it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:34<00:00,  9.77it/s]
+    100/100      3.38G      2.293       1.66          0         69        640: 100%|██████████| 6019/6019 [10:46<00:00,  9.31it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/335 [00:00<?, ?it/s]/home/han.sun/Projects/person_veh_detection/ultralytics/nn/modules/head.py:161: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  return torch.cat([boxes[i, index // nc], scores[..., None], (index % nc)[..., None].float()], dim=-1)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:33<00:00,  9.93it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 335/335 [00:41<00:00,  8.15it/s]

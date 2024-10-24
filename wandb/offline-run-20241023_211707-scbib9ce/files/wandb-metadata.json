@@ -1,0 +1,18 @@
+{
+    "os": "Linux-5.15.0-79-generic-x86_64-with-glibc2.31",
+    "python": "3.9.7",
+    "heartbeatAt": "2024-10-23T13:17:08.210230",
+    "startedAt": "2024-10-23T13:17:07.380274",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "cpu_count": 40,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/han.sun/Projects/person_veh_detection/train.py",
+    "codePath": "train.py",
+    "host": "se02.molchip.com",
+    "username": "Han.Sun",
+    "executable": "/home/han.sun/anaconda3/bin/python3"
+}

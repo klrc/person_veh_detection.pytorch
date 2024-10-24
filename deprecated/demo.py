@@ -278,9 +278,9 @@ def run_demo(device, weight, conf_thr, iou_thr, size, camera, screenshot, h264):
                 out = model(frame.to(device))
 
         # external nms (optional)
-        with time_rec.record("nms"):
-            if external_nms is not None:
-                out = external_nms(out)
+        # with time_rec.record("nms"):
+        #     if external_nms is not None:
+        #         out = external_nms(out)
 
         # Load raw image & parse outputs
         canvas.load(frame)
