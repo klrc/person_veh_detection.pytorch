@@ -1,16 +1,10 @@
-import sys
 import os
 
-sys.path.append("../..")
 from ultralytics import YOLO
 
-model = YOLO("yolov8n-obb.yaml")  # build a new model from YAML
-model.model.model[-1].export_for_xc01 = True  # remove post-process ops
+model = YOLO("yolov10n.yaml").load("runs/detect/train/weights/best.pt")  # build from YAML and transfer weights
+model.model.model[-1].export_for_intellif = True  # remove post-process ops
 results = model.export(format="onnx", opset=12)
 
-
-os.system("onnxsim yolov8n-obb.onnx yolov8n-obb.onnx")
-os.system("sudo sh docker_build.sh")
-
-os.system("cp outputs/nnp310/yolov8n-obb_nnp310_combine.ty ./")
-os.system("python3 auto_test.py")
+os.system("onnxsim yolov10n.onnx yolov10n.onnx")
+os.system("mv yolov10n.onnx yolov10n_personveh.onnx")

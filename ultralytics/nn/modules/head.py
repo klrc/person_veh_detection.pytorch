@@ -48,11 +48,10 @@ class Detect(nn.Module):
             self.one2one_cv3 = copy.deepcopy(self.cv3)
 
     def forward_intellif(self, x):
-        ret = []
-        for i in range(self.nl):
-            ret.append(self.cv2[i](x[i]))
-            ret.append(self.cv3[i](x[i]))
-        return ret
+        x_detach = [xi.detach() for xi in x]
+        one2one = [torch.cat((self.one2one_cv2[i](x_detach[i]), self.one2one_cv3[i](x_detach[i])), 1) for i in range(self.nl)]
+        y = self._inference(one2one)
+        return y
 
     def forward(self, x):
         """Concatenates and returns predicted bounding boxes and class probabilities."""
@@ -116,7 +115,8 @@ class Detect(nn.Module):
             dbox = self.decode_bboxes(self.dfl(box) * norm, self.anchors.unsqueeze(0) * norm[:, :2])
         else:
             dbox = self.decode_bboxes(self.dfl(box), self.anchors.unsqueeze(0)) * self.strides
-
+        if self.export_for_intellif:
+            return dbox, cls.sigmoid()
         return torch.cat((dbox, cls.sigmoid()), 1)
 
     def bias_init(self):
